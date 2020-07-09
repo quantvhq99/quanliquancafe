@@ -56,5 +56,8 @@ namespace GUI
             if (XtraMessageBox.Show("Bạn có thật sự muốn thoát?", "Thông báo", MessageBoxButtons.OKCancel) != DialogResult.OK)
                 e.Cancel = true;
         }
+
+        
+
     }
 }

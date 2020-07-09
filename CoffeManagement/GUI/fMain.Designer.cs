@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fMain));
             this.flpListTable = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnMergeTable = new DevExpress.XtraEditors.SimpleButton();
             this.lsvBill = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -50,7 +51,6 @@
             this.lkedPickCategory = new DevExpress.XtraEditors.LookUpEdit();
             this.lkedPickFood = new DevExpress.XtraEditors.LookUpEdit();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
-            this.btnMergeTable = new DevExpress.XtraEditors.SimpleButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtTotalPrice.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lkedPickTable.Properties)).BeginInit();
@@ -67,8 +67,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flpListTable.AutoScroll = true;
             this.flpListTable.Location = new System.Drawing.Point(0, 1);
+            this.flpListTable.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.flpListTable.Name = "flpListTable";
-            this.flpListTable.Size = new System.Drawing.Size(371, 455);
+            this.flpListTable.Size = new System.Drawing.Size(433, 560);
             this.flpListTable.TabIndex = 30;
             // 
             // panel1
@@ -89,10 +90,24 @@
             this.panel1.Controls.Add(this.btnAddFood);
             this.panel1.Controls.Add(this.lkedPickCategory);
             this.panel1.Controls.Add(this.lkedPickFood);
-            this.panel1.Location = new System.Drawing.Point(377, 1);
+            this.panel1.Location = new System.Drawing.Point(440, 1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(551, 455);
+            this.panel1.Size = new System.Drawing.Size(643, 560);
             this.panel1.TabIndex = 0;
+            // 
+            // btnMergeTable
+            // 
+            this.btnMergeTable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMergeTable.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMergeTable.Appearance.Options.UseFont = true;
+            this.btnMergeTable.Location = new System.Drawing.Point(464, 11);
+            this.btnMergeTable.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnMergeTable.Name = "btnMergeTable";
+            this.btnMergeTable.Size = new System.Drawing.Size(77, 42);
+            this.btnMergeTable.TabIndex = 43;
+            this.btnMergeTable.Text = "Gộp";
+            this.btnMergeTable.Click += new System.EventHandler(this.btnMergeTable_Click);
             // 
             // lsvBill
             // 
@@ -105,9 +120,11 @@
             this.columnHeader4});
             this.lsvBill.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lsvBill.GridLines = true;
-            this.lsvBill.Location = new System.Drawing.Point(3, 83);
+            this.lsvBill.HideSelection = false;
+            this.lsvBill.Location = new System.Drawing.Point(3, 102);
+            this.lsvBill.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lsvBill.Name = "lsvBill";
-            this.lsvBill.Size = new System.Drawing.Size(542, 287);
+            this.lsvBill.Size = new System.Drawing.Size(632, 352);
             this.lsvBill.TabIndex = 42;
             this.lsvBill.UseCompatibleStateImageBehavior = false;
             this.lsvBill.View = System.Windows.Forms.View.Details;
@@ -137,10 +154,13 @@
             this.labelControl3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Image = global::GUI.Properties.Resources.Check_2_icon;
+            this.labelControl3.Appearance.Options.UseFont = true;
+            this.labelControl3.Appearance.Options.UseImage = true;
             this.labelControl3.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.labelControl3.Location = new System.Drawing.Point(14, 384);
+            this.labelControl3.Location = new System.Drawing.Point(16, 473);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(99, 28);
+            this.labelControl3.Size = new System.Drawing.Size(121, 28);
             this.labelControl3.TabIndex = 41;
             this.labelControl3.Text = "Đang chọn";
             // 
@@ -149,10 +169,13 @@
             this.labelControl2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Image = global::GUI.Properties.Resources.check_1_icon;
+            this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Appearance.Options.UseImage = true;
             this.labelControl2.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.labelControl2.Location = new System.Drawing.Point(14, 419);
+            this.labelControl2.Location = new System.Drawing.Point(16, 516);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(86, 28);
+            this.labelControl2.Size = new System.Drawing.Size(104, 28);
             this.labelControl2.TabIndex = 41;
             this.labelControl2.Text = "Có người";
             // 
@@ -160,9 +183,11 @@
             // 
             this.labelControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Location = new System.Drawing.Point(136, 406);
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Location = new System.Drawing.Point(159, 500);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(56, 18);
+            this.labelControl1.Size = new System.Drawing.Size(74, 23);
             this.labelControl1.TabIndex = 40;
             this.labelControl1.Text = "Giảm giá";
             // 
@@ -170,24 +195,26 @@
             // 
             this.txtTotalPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTotalPrice.Enabled = false;
-            this.txtTotalPrice.Location = new System.Drawing.Point(295, 399);
+            this.txtTotalPrice.Location = new System.Drawing.Point(344, 491);
+            this.txtTotalPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTotalPrice.Name = "txtTotalPrice";
             this.txtTotalPrice.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotalPrice.Properties.Appearance.Options.UseFont = true;
-            this.txtTotalPrice.Size = new System.Drawing.Size(154, 30);
+            this.txtTotalPrice.Size = new System.Drawing.Size(180, 36);
             this.txtTotalPrice.TabIndex = 39;
             // 
             // lkedPickTable
             // 
             this.lkedPickTable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lkedPickTable.Location = new System.Drawing.Point(398, 49);
+            this.lkedPickTable.Location = new System.Drawing.Point(464, 60);
+            this.lkedPickTable.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lkedPickTable.Name = "lkedPickTable";
             this.lkedPickTable.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lkedPickTable.Properties.Appearance.Options.UseFont = true;
             this.lkedPickTable.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lkedPickTable.Properties.NullText = "-- Chọn bàn --";
-            this.lkedPickTable.Size = new System.Drawing.Size(142, 24);
+            this.lkedPickTable.Size = new System.Drawing.Size(166, 30);
             this.lkedPickTable.TabIndex = 38;
             // 
             // spDiscount
@@ -198,7 +225,8 @@
             0,
             0,
             0});
-            this.spDiscount.Location = new System.Drawing.Point(198, 403);
+            this.spDiscount.Location = new System.Drawing.Point(231, 496);
+            this.spDiscount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.spDiscount.Name = "spDiscount";
             this.spDiscount.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.spDiscount.Properties.Appearance.Options.UseFont = true;
@@ -214,7 +242,7 @@
             0,
             0,
             0});
-            this.spDiscount.Size = new System.Drawing.Size(68, 24);
+            this.spDiscount.Size = new System.Drawing.Size(79, 30);
             this.spDiscount.TabIndex = 36;
             // 
             // spAmount
@@ -226,7 +254,8 @@
             0,
             0,
             0});
-            this.spAmount.Location = new System.Drawing.Point(334, 31);
+            this.spAmount.Location = new System.Drawing.Point(390, 38);
+            this.spAmount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.spAmount.Name = "spAmount";
             this.spAmount.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.spAmount.Properties.Appearance.Options.UseFont = true;
@@ -242,7 +271,7 @@
             0,
             0,
             -2147483648});
-            this.spAmount.Size = new System.Drawing.Size(49, 24);
+            this.spAmount.Size = new System.Drawing.Size(57, 30);
             this.spAmount.TabIndex = 37;
             // 
             // btnChangeTable
@@ -250,9 +279,10 @@
             this.btnChangeTable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnChangeTable.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChangeTable.Appearance.Options.UseFont = true;
-            this.btnChangeTable.Location = new System.Drawing.Point(474, 9);
+            this.btnChangeTable.Location = new System.Drawing.Point(553, 11);
+            this.btnChangeTable.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnChangeTable.Name = "btnChangeTable";
-            this.btnChangeTable.Size = new System.Drawing.Size(66, 34);
+            this.btnChangeTable.Size = new System.Drawing.Size(77, 42);
             this.btnChangeTable.TabIndex = 33;
             this.btnChangeTable.Text = "Chuyển";
             this.btnChangeTable.Click += new System.EventHandler(this.btnChangeTable_Click);
@@ -262,9 +292,10 @@
             this.btnCheck.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCheck.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCheck.Appearance.Options.UseFont = true;
-            this.btnCheck.Location = new System.Drawing.Point(455, 383);
+            this.btnCheck.Location = new System.Drawing.Point(531, 471);
+            this.btnCheck.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCheck.Name = "btnCheck";
-            this.btnCheck.Size = new System.Drawing.Size(90, 64);
+            this.btnCheck.Size = new System.Drawing.Size(105, 79);
             this.btnCheck.TabIndex = 34;
             this.btnCheck.Text = "Thanh toán";
             this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
@@ -274,9 +305,10 @@
             this.btnAddFood.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAddFood.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddFood.Appearance.Options.UseFont = true;
-            this.btnAddFood.Location = new System.Drawing.Point(214, 21);
+            this.btnAddFood.Location = new System.Drawing.Point(250, 26);
+            this.btnAddFood.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAddFood.Name = "btnAddFood";
-            this.btnAddFood.Size = new System.Drawing.Size(114, 43);
+            this.btnAddFood.Size = new System.Drawing.Size(133, 53);
             this.btnAddFood.TabIndex = 35;
             this.btnAddFood.Text = "Thêm món";
             this.btnAddFood.Click += new System.EventHandler(this.btnAddFood_Click);
@@ -285,14 +317,15 @@
             // 
             this.lkedPickCategory.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lkedPickCategory.Location = new System.Drawing.Point(14, 14);
+            this.lkedPickCategory.Location = new System.Drawing.Point(16, 17);
+            this.lkedPickCategory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lkedPickCategory.Name = "lkedPickCategory";
             this.lkedPickCategory.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lkedPickCategory.Properties.Appearance.Options.UseFont = true;
             this.lkedPickCategory.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lkedPickCategory.Properties.NullText = "-- Chọn danh mục --";
-            this.lkedPickCategory.Size = new System.Drawing.Size(189, 24);
+            this.lkedPickCategory.Size = new System.Drawing.Size(220, 30);
             this.lkedPickCategory.TabIndex = 31;
             this.lkedPickCategory.EditValueChanged += new System.EventHandler(this.lkedPickCategory_EditValueChanged);
             // 
@@ -300,14 +333,15 @@
             // 
             this.lkedPickFood.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lkedPickFood.Location = new System.Drawing.Point(14, 53);
+            this.lkedPickFood.Location = new System.Drawing.Point(16, 65);
+            this.lkedPickFood.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lkedPickFood.Name = "lkedPickFood";
             this.lkedPickFood.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lkedPickFood.Properties.Appearance.Options.UseFont = true;
             this.lkedPickFood.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lkedPickFood.Properties.NullText = "-- Chọn món --";
-            this.lkedPickFood.Size = new System.Drawing.Size(189, 24);
+            this.lkedPickFood.Size = new System.Drawing.Size(220, 30);
             this.lkedPickFood.TabIndex = 32;
             // 
             // imageList
@@ -317,27 +351,17 @@
             this.imageList.Images.SetKeyName(0, "check-1-icon.png");
             this.imageList.Images.SetKeyName(1, "Check-2-icon.png");
             // 
-            // btnMergeTable
-            // 
-            this.btnMergeTable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMergeTable.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMergeTable.Appearance.Options.UseFont = true;
-            this.btnMergeTable.Location = new System.Drawing.Point(398, 9);
-            this.btnMergeTable.Name = "btnMergeTable";
-            this.btnMergeTable.Size = new System.Drawing.Size(66, 34);
-            this.btnMergeTable.TabIndex = 43;
-            this.btnMergeTable.Text = "Gộp";
-            this.btnMergeTable.Click += new System.EventHandler(this.btnMergeTable_Click);
-            // 
             // fMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(929, 456);
+            this.ClientSize = new System.Drawing.Size(1084, 561);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.flpListTable);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IconOptions.Icon = ((System.Drawing.Icon)(resources.GetObject("fMain.IconOptions.Icon")));
+            this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("fMain.IconOptions.Image")));
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "fMain";
             this.Text = "Màn hình chính";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.fMain_KeyDown);

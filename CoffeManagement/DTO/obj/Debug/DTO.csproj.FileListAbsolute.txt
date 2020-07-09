@@ -32,3 +32,9 @@ C:\Users\quant\Downloads\CoffeManagement\CoffeManagement\DTO\obj\Debug\DTO.cspro
 C:\Users\quant\Downloads\CoffeManagement\CoffeManagement\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\Users\quant\Downloads\CoffeManagement\CoffeManagement\DTO\obj\Debug\DTO.dll
 C:\Users\quant\Downloads\CoffeManagement\CoffeManagement\DTO\obj\Debug\DTO.pdb
+C:\Users\quant\OneDrive\Máy tính\New folder\quanliquancafe\CoffeManagement\DTO\bin\Debug\DTO.dll
+C:\Users\quant\OneDrive\Máy tính\New folder\quanliquancafe\CoffeManagement\DTO\bin\Debug\DTO.pdb
+C:\Users\quant\OneDrive\Máy tính\New folder\quanliquancafe\CoffeManagement\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\quant\OneDrive\Máy tính\New folder\quanliquancafe\CoffeManagement\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\quant\OneDrive\Máy tính\New folder\quanliquancafe\CoffeManagement\DTO\obj\Debug\DTO.dll
+C:\Users\quant\OneDrive\Máy tính\New folder\quanliquancafe\CoffeManagement\DTO\obj\Debug\DTO.pdb

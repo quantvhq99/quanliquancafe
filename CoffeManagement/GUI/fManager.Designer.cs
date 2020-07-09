@@ -74,7 +74,7 @@
             // ribbon
             // 
             this.ribbon.ApplicationButtonDropDownControl = this.applicationMenu1;
-            this.ribbon.ApplicationIcon = global::GUI.Properties.Resources.Uiconstock_Dynamic_Flat_Android_Coffee;
+            this.ribbon.ApplicationButtonImageOptions.Image = global::GUI.Properties.Resources.Uiconstock_Dynamic_Flat_Android_Coffee;
             this.ribbon.ExpandCollapseItem.Id = 0;
             this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbon.ExpandCollapseItem,
@@ -93,14 +93,16 @@
             this.btnBackup,
             this.btnRestore,
             this.btnLog,
-            this.btnSendMail});
+            this.btnSendMail,
+            this.ribbon.SearchEditItem});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
+            this.ribbon.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbon.MaxItemId = 18;
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage,
             this.ribbonPageManager});
-            this.ribbon.Size = new System.Drawing.Size(975, 143);
+            this.ribbon.Size = new System.Drawing.Size(1137, 193);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
             // applicationMenu1
@@ -112,7 +114,7 @@
             // 
             this.btnShowForm.Caption = "Tác vụ";
             this.btnShowForm.Id = 2;
-            this.btnShowForm.LargeGlyph = global::GUI.Properties.Resources.icon_developer_icon;
+            this.btnShowForm.ImageOptions.LargeImage = global::GUI.Properties.Resources.icon_developer_icon;
             this.btnShowForm.LargeWidth = 75;
             this.btnShowForm.Name = "btnShowForm";
             this.btnShowForm.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnShowForm_ItemClick);
@@ -127,7 +129,7 @@
             // 
             this.btnViewFood.Caption = "Thực đơn";
             this.btnViewFood.Id = 4;
-            this.btnViewFood.LargeGlyph = global::GUI.Properties.Resources.Food_Coffee_icon;
+            this.btnViewFood.ImageOptions.LargeImage = global::GUI.Properties.Resources.Food_Coffee_icon;
             this.btnViewFood.LargeWidth = 75;
             this.btnViewFood.Name = "btnViewFood";
             this.btnViewFood.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnViewFood_ItemClick);
@@ -136,7 +138,7 @@
             // 
             this.btnViewCategoryFood.Caption = "Danh mục";
             this.btnViewCategoryFood.Id = 5;
-            this.btnViewCategoryFood.LargeGlyph = global::GUI.Properties.Resources.Ecommerce_Bill_icon;
+            this.btnViewCategoryFood.ImageOptions.LargeImage = global::GUI.Properties.Resources.Ecommerce_Bill_icon;
             this.btnViewCategoryFood.LargeWidth = 75;
             this.btnViewCategoryFood.Name = "btnViewCategoryFood";
             this.btnViewCategoryFood.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnViewCategoryFood_ItemClick);
@@ -145,7 +147,7 @@
             // 
             this.btnViewTable.Caption = "Bàn";
             this.btnViewTable.Id = 6;
-            this.btnViewTable.LargeGlyph = global::GUI.Properties.Resources.Household_Table_icon;
+            this.btnViewTable.ImageOptions.LargeImage = global::GUI.Properties.Resources.Household_Table_icon;
             this.btnViewTable.LargeWidth = 75;
             this.btnViewTable.Name = "btnViewTable";
             this.btnViewTable.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnViewTable_ItemClick);
@@ -154,7 +156,7 @@
             // 
             this.btnAccountInfo.Caption = "Thông tin tài khoản";
             this.btnAccountInfo.Id = 7;
-            this.btnAccountInfo.LargeGlyph = global::GUI.Properties.Resources.user_info_icon;
+            this.btnAccountInfo.ImageOptions.LargeImage = global::GUI.Properties.Resources.user_info_icon;
             this.btnAccountInfo.LargeWidth = 75;
             this.btnAccountInfo.Name = "btnAccountInfo";
             this.btnAccountInfo.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAccountInfo_ItemClick);
@@ -163,7 +165,7 @@
             // 
             this.btnLogOut.Caption = "Đăng xuất";
             this.btnLogOut.Id = 8;
-            this.btnLogOut.LargeGlyph = global::GUI.Properties.Resources.logout_icon;
+            this.btnLogOut.ImageOptions.LargeImage = global::GUI.Properties.Resources.logout_icon;
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLogOut_ItemClick);
             // 
@@ -171,7 +173,7 @@
             // 
             this.btnViewAccount.Caption = "Tài khoản";
             this.btnViewAccount.Id = 9;
-            this.btnViewAccount.LargeGlyph = global::GUI.Properties.Resources.User_Group_icon;
+            this.btnViewAccount.ImageOptions.LargeImage = global::GUI.Properties.Resources.User_Group_icon;
             this.btnViewAccount.LargeWidth = 75;
             this.btnViewAccount.Name = "btnViewAccount";
             this.btnViewAccount.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnViewAccount_ItemClick);
@@ -180,7 +182,7 @@
             // 
             this.btnViewBill.Caption = "Doanh thu";
             this.btnViewBill.Id = 10;
-            this.btnViewBill.LargeGlyph = global::GUI.Properties.Resources.Cash_icon;
+            this.btnViewBill.ImageOptions.LargeImage = global::GUI.Properties.Resources.Cash_icon;
             this.btnViewBill.LargeWidth = 75;
             this.btnViewBill.Name = "btnViewBill";
             this.btnViewBill.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnViewBill_ItemClick);
@@ -189,7 +191,7 @@
             // 
             this.btnStatistic.Caption = "Thống kê";
             this.btnStatistic.Id = 11;
-            this.btnStatistic.LargeGlyph = global::GUI.Properties.Resources.Presentation_icon;
+            this.btnStatistic.ImageOptions.LargeImage = global::GUI.Properties.Resources.Presentation_icon;
             this.btnStatistic.LargeWidth = 75;
             this.btnStatistic.Name = "btnStatistic";
             this.btnStatistic.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnStatistic_ItemClick);
@@ -199,7 +201,6 @@
             this.bsTextDate.Caption = "barStaticItem1";
             this.bsTextDate.Id = 12;
             this.bsTextDate.Name = "bsTextDate";
-            this.bsTextDate.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
             // ribbonGalleryBarItem1
             // 
@@ -211,7 +212,7 @@
             // 
             this.btnBackup.Caption = "Sao Lưu";
             this.btnBackup.Id = 14;
-            this.btnBackup.LargeGlyph = global::GUI.Properties.Resources.Backup_restore_icon;
+            this.btnBackup.ImageOptions.LargeImage = global::GUI.Properties.Resources.Backup_restore_icon;
             this.btnBackup.LargeWidth = 75;
             this.btnBackup.Name = "btnBackup";
             this.btnBackup.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBackup_ItemClick);
@@ -220,7 +221,7 @@
             // 
             this.btnRestore.Caption = "Phục hồi";
             this.btnRestore.Id = 15;
-            this.btnRestore.LargeGlyph = global::GUI.Properties.Resources.Folder_URL_History_icon;
+            this.btnRestore.ImageOptions.LargeImage = global::GUI.Properties.Resources.Folder_URL_History_icon;
             this.btnRestore.LargeWidth = 75;
             this.btnRestore.Name = "btnRestore";
             this.btnRestore.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnRestore_ItemClick);
@@ -229,7 +230,7 @@
             // 
             this.btnLog.Caption = "Nhật ký hệ thống";
             this.btnLog.Id = 16;
-            this.btnLog.LargeGlyph = global::GUI.Properties.Resources.Apps_preferences_system_time_icon;
+            this.btnLog.ImageOptions.LargeImage = global::GUI.Properties.Resources.Apps_preferences_system_time_icon;
             this.btnLog.LargeWidth = 75;
             this.btnLog.Name = "btnLog";
             this.btnLog.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLog_ItemClick);
@@ -238,7 +239,7 @@
             // 
             this.btnSendMail.Caption = "Gửi báo cáo";
             this.btnSendMail.Id = 17;
-            this.btnSendMail.LargeGlyph = global::GUI.Properties.Resources.email_send_icon;
+            this.btnSendMail.ImageOptions.LargeImage = global::GUI.Properties.Resources.email_send_icon;
             this.btnSendMail.LargeWidth = 75;
             this.btnSendMail.Name = "btnSendMail";
             this.btnSendMail.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSendMail_ItemClick);
@@ -314,10 +315,11 @@
             // ribbonStatusBar
             // 
             this.ribbonStatusBar.ItemLinks.Add(this.bsTextDate);
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 502);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 626);
+            this.ribbonStatusBar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(975, 31);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1137, 30);
             // 
             // xtraTabbedMdiManager1
             // 
@@ -325,14 +327,16 @@
             // 
             // fManager
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(975, 533);
+            this.ClientSize = new System.Drawing.Size(1137, 656);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbon);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IconOptions.Icon = ((System.Drawing.Icon)(resources.GetObject("fManager.IconOptions.Icon")));
+            this.IconOptions.Image = global::GUI.Properties.Resources.Uiconstock_Dynamic_Flat_Android_Coffee;
             this.IsMdiContainer = true;
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "fManager";
             this.Ribbon = this.ribbon;
             this.StatusBar = this.ribbonStatusBar;

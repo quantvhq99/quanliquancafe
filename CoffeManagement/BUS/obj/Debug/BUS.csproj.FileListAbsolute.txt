@@ -63,3 +63,14 @@ C:\Users\quant\Downloads\CoffeManagement\CoffeManagement\BUS\obj\Debug\BUS.cspro
 C:\Users\quant\Downloads\CoffeManagement\CoffeManagement\BUS\obj\Debug\BUS.csproj.CopyComplete
 C:\Users\quant\Downloads\CoffeManagement\CoffeManagement\BUS\obj\Debug\BUS.dll
 C:\Users\quant\Downloads\CoffeManagement\CoffeManagement\BUS\obj\Debug\BUS.pdb
+C:\Users\quant\OneDrive\Máy tính\New folder\quanliquancafe\CoffeManagement\BUS\bin\Debug\BUS.dll
+C:\Users\quant\OneDrive\Máy tính\New folder\quanliquancafe\CoffeManagement\BUS\bin\Debug\BUS.pdb
+C:\Users\quant\OneDrive\Máy tính\New folder\quanliquancafe\CoffeManagement\BUS\bin\Debug\DAO.dll
+C:\Users\quant\OneDrive\Máy tính\New folder\quanliquancafe\CoffeManagement\BUS\bin\Debug\DTO.dll
+C:\Users\quant\OneDrive\Máy tính\New folder\quanliquancafe\CoffeManagement\BUS\bin\Debug\DAO.pdb
+C:\Users\quant\OneDrive\Máy tính\New folder\quanliquancafe\CoffeManagement\BUS\bin\Debug\DTO.pdb
+C:\Users\quant\OneDrive\Máy tính\New folder\quanliquancafe\CoffeManagement\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+C:\Users\quant\OneDrive\Máy tính\New folder\quanliquancafe\CoffeManagement\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\quant\OneDrive\Máy tính\New folder\quanliquancafe\CoffeManagement\BUS\obj\Debug\BUS.csproj.CopyComplete
+C:\Users\quant\OneDrive\Máy tính\New folder\quanliquancafe\CoffeManagement\BUS\obj\Debug\BUS.dll
+C:\Users\quant\OneDrive\Máy tính\New folder\quanliquancafe\CoffeManagement\BUS\obj\Debug\BUS.pdb
